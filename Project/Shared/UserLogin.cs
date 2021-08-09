@@ -9,8 +9,8 @@ namespace Project.Shared
 {
     public class UserLogin
     {
-        [Required]
-        public string Username { get; set; }
+        [Required(ErrorMessage = "Please, enter an Email address.")]
+        public string Email { get; set; }
         [Required]
         public string Password { get; set; }
     }

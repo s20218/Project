@@ -37,6 +37,9 @@ namespace Project.Client
 
             builder.Services.AddAuthorizationCore();
 
+
+            builder.Services.AddScoped<IAuthService, AuthService>();
+
             await builder.Build().RunAsync();
         }
     }
